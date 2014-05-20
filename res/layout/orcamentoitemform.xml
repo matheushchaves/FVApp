@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="5px"
+    android:orientation="vertical">
+
+    <TableLayout 
+        android:id="@+id/tablelayout1" 
+        android:layout_height="fill_parent" 
+        android:layout_width="fill_parent"
+        android:paddingTop="5px">
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text2" 
+                android:text="@string/labelproduto"/>
+            <EditText 
+                android:id="@+id/etProduto" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="100"
+                style="@style/ReadOnlyEditText"/>
+            <ImageButton
+                android:id="@+id/btProcProduto"
+                style="@style/btBusca"/>                 
+        </TableRow>     
+        
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text3" 
+                android:text="@string/labelqtde"/>
+            <EditText 
+                android:id="@+id/etQtde" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:inputType="numberDecimal"/>
+        </TableRow>                
+        
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text3" 
+                android:text="@string/labelvalorbruto"/>
+            <EditText 
+                android:id="@+id/etValorBruto" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ReadOnlyNumericEditText"/>
+        </TableRow>            
+        
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text3" 
+                android:text="@string/labelporcdesc"/>
+            <EditText 
+                android:id="@+id/etPorcDesc" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ReadOnlyNumericEditText"/>
+        </TableRow>            
+        
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text3" 
+                android:text="@string/labelvalor"/>
+            <EditText 
+                android:id="@+id/etValor" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ReadOnlyNumericEditText"/>
+        </TableRow>                        
+        
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text3" 
+                android:text="@string/labelvalortotal"/>
+            <EditText 
+                android:id="@+id/etValorTotal" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textStyle="bold"
+                style="@style/ReadOnlyNumericEditText"/>
+        </TableRow>                                
+
+    </TableLayout>
+    
+</ScrollView>    

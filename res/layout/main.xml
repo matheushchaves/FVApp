@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="false"
+    android:background="@drawable/mainbackground"
+    android:orientation="vertical"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize" >
+
+        <TableLayout
+            android:id="@+id/tablelayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            tools:ignore="UselessParent" >
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btClientes"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/mainclientes"
+                    android:ellipsize="none"
+                    android:text="@string/clientes" />
+
+                <Button
+                    android:id="@+id/btProdutos"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/mainprodutos"
+                    android:text="@string/produtos" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btOrcamentos"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/mainorcamentos"
+                    android:text="@string/orcamentos" />
+
+                <Button
+                    android:id="@+id/btGastos"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/maingastos"
+                    android:text="@string/gastos" />
+            </TableRow>
+
+            <TableRow>
+
+                <Button
+                    android:id="@+id/btSync"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/mainsinc"
+                    android:text="@string/sincronizar" />
+
+                <Button
+                    android:id="@+id/btConfiguracoes"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="6dp"
+                    android:drawableTop="@drawable/mainconfiguracoes"
+                    android:text="@string/configuracoes" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    
+    <style name="ReadOnlyEditText">
+        <item name="android:editable">false</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+    
+    <style name="ReadOnlyNumericEditText" parent="@style/ReadOnlyEditText">
+        <item name="android:gravity">right</item>        
+    </style>    
+    
+    <style name="btFala">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/btmicrofone</item>
+    </style>        
+    
+    <style name="btBusca">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/btfiltrar</item>
+    </style>        
+    
+    <style name="btCodBarras">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/btcodbarras</item>
+    </style>       
+    
+    <style name="btWeb">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/btweb</item>
+    </style>      
+    
+    <style name="btData">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:src">@drawable/btdata</item>
+    </style>      
+    
+</resources>

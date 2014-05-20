@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="5px"
+    android:orientation="vertical">
+
+    <TableLayout 
+        android:id="@+id/tablelayout1" 
+        android:layout_height="fill_parent" 
+        android:layout_width="fill_parent"
+        android:paddingTop="5px">
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text1" 
+                android:text="@string/labeldescricao"/>
+            <AutoCompleteTextView 
+                android:id="@+id/etDescricao" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+            <ImageButton
+                android:id="@+id/btFala"
+                style="@style/btFala"/>                  
+        </TableRow>        
+        
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text3" 
+                android:text="@string/labeldata"/>
+            <EditText 
+                android:id="@+id/etData" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ReadOnlyEditText"/>
+            <ImageButton
+                android:id="@+id/btData"
+                style="@style/btData"/>                 
+        </TableRow>                                                      
+
+    </TableLayout>
+    
+</ScrollView>    

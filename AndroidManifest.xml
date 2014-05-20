@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="com.forcadevenda.activity"
+      android:versionCode="1"
+      android:versionName="2014" xmlns:tools="http://schemas.android.com/tools">
+          
+    <uses-sdk android:minSdkVersion="7" tools:ignore="UsesMinSdkAttributes"/>          
+          
+    <uses-permission android:name="android.permission.VIBRATE"/>                  
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET" /><uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+          
+    <application android:label="@string/app_name" android:theme="@android:style/Theme.DeviceDefault" android:description="@string/descriapp" android:icon="@drawable/ic_launcher" tools:ignore="AllowBackup" android:logo="@drawable/ic_launcher" tools:targetApi="14" android:hardwareAccelerated="true">
+        
+        <activity android:name="Main"
+                  android:label="@string/app_name"
+                  android:theme="@android:style/Theme.Black.NoTitleBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="Sincronizar" android:label="@string/sincronizar" android:configChanges="orientation|keyboardHidden"></activity>
+        
+        <activity android:name="Uteis" android:label="@string/uteis" android:configChanges="orientation|keyboardHidden"></activity>
+        
+        <activity android:name="Regioes" android:label="@string/regioes" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name="RegiaoForm" android:label="@string/regiaoform" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name="RegiaoFiltro" android:label="@string/regiaofiltro" android:configChanges="orientation|keyboardHidden"></activity>
+        
+        <activity android:name="Clientes" android:label="@string/clientes" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name="ClienteForm" android:label="@string/clienteform" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name="ClienteFiltro" android:label="@string/clientefiltro" android:configChanges="orientation|keyboardHidden"></activity>
+        
+        <activity android:name="CondPagtos" android:label="@string/condpagtos" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name="CondPagtoFiltro" android:label="@string/condpagtofiltro" android:configChanges="orientation|keyboardHidden"></activity>
+        
+        <activity android:name="Grupos" android:label="@string/grupos" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name="GrupoFiltro" android:label="@string/grupofiltro" android:configChanges="orientation|keyboardHidden"></activity>        
+        
+        <activity android:name="Produtos" android:label="@string/produtos" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name="ProdutoForm" android:label="@string/produtoform" android:configChanges="orientation|keyboardHidden"></activity>
+        <activity android:name="ProdutoFiltro" android:label="@string/produtofiltro" android:configChanges="orientation|keyboardHidden"></activity>
+        
+        <activity android:name="Gastos" android:label="@string/gastos" android:configChanges="orientation|keyboardHidden"></activity>        
+        <activity android:name="GastoForm" android:label="@string/gastoform" android:configChanges="orientation|keyboardHidden"></activity>                
+        <activity android:name="GastoFiltro" android:label="@string/gastofiltro" android:configChanges="orientation|keyboardHidden"></activity>                
+        
+        <activity android:name="Orcamentos" android:label="@string/orcamentos" android:configChanges="orientation|keyboardHidden"></activity>        
+        <activity android:name="OrcamentoForm" android:label="@string/orcamentoform" android:configChanges="orientation|keyboardHidden"></activity>        
+        <activity android:name="OrcamentoFiltro" android:label="@string/orcamentofiltro" android:configChanges="orientation|keyboardHidden"></activity>        
+        
+        <activity android:name="OrcamentosItens" android:label="@string/orcamentositens" android:configChanges="orientation|keyboardHidden"></activity>        
+        <activity android:name="OrcamentoItemForm" android:label="@string/orcamentoitemform" android:configChanges="orientation|keyboardHidden"></activity>                
+        
+        <activity android:name="Configuracoes" android:label="@string/configuracoes" android:configChanges="orientation|keyboardHidden"></activity>                
+        
+    </application>
+</manifest> 

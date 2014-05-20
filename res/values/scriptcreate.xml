@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<resources>
+    
+    <string name="createregioes">
+        CREATE TABLE IF NOT EXISTS "REGIOES"(
+            "ID" INTEGER PRIMARY KEY AUTOINCREMENT,   
+            "NOME" VARCHAR(100),
+            "CODIGOIMPORT" VARCHAR(30)
+        ); 
+    </string>
+    
+    <string name="createclientes">
+        CREATE TABLE IF NOT EXISTS "CLIENTES"(        
+            "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
+            "ATIVO" SMALLINT,   
+            "NOME" VARCHAR(100),   
+            "FANTASIA"  VARCHAR(100),   
+            "TELEFONE" VARCHAR(20),
+            "PESSOA" CHAR(1),   
+            "DOCUMENTO1" VARCHAR(20),   
+            "DOCUMENTO2" VARCHAR(20),   
+            "CEP" VARCHAR(9),   
+            "ENDERECO" VARCHAR(100),   
+            "NUM" VARCHAR(20),   
+            "BAIRRO" VARCHAR(50),   
+            "COMPLEND" VARCHAR(50),   
+            "CIDADE" VARCHAR(50),   
+            "UF" VARCHAR(2),   
+            "IDREGIAO" INTEGER CONSTRAINT [FK_CLIENTES_REGIOES] REFERENCES [REGIOES]([ID]),
+            "EMAIL" VARCHAR(50),   
+            "RESPONSAVEL" VARCHAR(50),   
+            "OBS" BLOB_TEXT,
+            "CODIGOIMPORT" VARCHAR(30)
+        );
+    </string>       
+    
+    <string name="creategastos">
+        CREATE TABLE IF NOT EXISTS "GASTOS"(
+                "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
+                "DATA" DATE,
+                "DESCRICAO" VARCHAR(100),   
+                "QTDE" DECIMAL(15, 2),   
+                "VALOR" DECIMAL(15, 2)
+        );        
+    </string>      
+    
+    <string name="createcondpagtos">
+        CREATE TABLE IF NOT EXISTS "CONDPAGTOS"(
+                "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
+                "CODIGOIMPORT" VARCHAR(30),
+                "DESCRICAO" VARCHAR(100),   	
+                "PARCELAS" SMALLINT,   	
+                "PORCDESC" DECIMAL(15, 2)
+        );        
+    </string>  
+    
+    <string name="creategrupos">
+        CREATE TABLE IF NOT EXISTS "GRUPOS"(   
+                "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
+                "CODIGOIMPORT" VARCHAR(30),
+                "DESCRICAO" VARCHAR(100)
+        );        
+    </string>    
+    
+    <string name="createprodutos">
+        CREATE TABLE IF NOT EXISTS "PRODUTOS"(   
+                "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
+                "CODIGOIMPORT" VARCHAR(30),
+                "DESCRICAO" VARCHAR(50),   	
+                "ESTOQUE" DECIMAL(15, 2),   	                
+                "PRECOVENDA" DECIMAL(15, 2),                   
+                "IDGRUPO" INTEGER CONSTRAINT [FK_PRODUTOS_GRUPOS] REFERENCES [GRUPOS]([ID]),   
+                "UN" VARCHAR(10),   	
+                "CODBARRAS" VARCHAR(20),   
+                "URL" VARCHAR(50),   
+                "OBS" BLOB_TEXT
+        );        
+    </string>       
+    <string name="createempresas">
+        CREATE TABLE IF NOT EXISTS "EMPRESAS"(   
+                "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
+                "CODIGOIMPORT" VARCHAR(30),
+                "RASOEMP" VARCHAR(30),
+                "FTPDEMP" VARCHAR(50),
+                "FTPUSER" VARCHAR(50),
+                "FTPPASS" VARCHAR(50),   	
+                "CODIVEN" VARCHAR(03)   	                
+        );        
+    </string>       
+    <string name="createorcamentos">
+        CREATE TABLE IF NOT EXISTS "ORCAMENTOS"(   
+                "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
+                "DATA" DATE,   
+                "STATUS" SMALLINT,   
+                "IDCLIENTE" INTEGER CONSTRAINT [FK_ORCAMENTOS_CLIENTES] REFERENCES [CLIENTES]([ID]),   
+                "IDCONDPAGTO" INTEGER CONSTRAINT [FK_ORCAMENTOS_CONDPAGTOS] REFERENCES [CONDPAGTOS]([ID]),   
+                "VALORTOTAL" DECIMAL(15, 2),   
+                "OBS" BLOB_TEXT
+        );        
+    </string>        
+    
+    <string name="createorcamentositens">
+        CREATE TABLE IF NOT EXISTS "ORCAMENTOSITENS"(   
+                "ID" INTEGER PRIMARY KEY AUTOINCREMENT,
+                "IDORCAMENTO" INTEGER NOT NULL CONSTRAINT [FK_ORCAMENTOSITENS_ORCAMENTOS] REFERENCES [ORCAMENTOS]([ID]) ON DELETE CASCADE,       
+                "IDPRODUTO" INTEGER NOT NULL CONSTRAINT [FK_ORCAMENTOSITENS_PRODUTOS] REFERENCES [PRODUTOS]([ID]),      
+                "QTDE" DECIMAL(15, 2),   
+                "VALORBRUTO" DECIMAL(15, 2),                
+                "VALOR" DECIMAL(15, 2)
+        );        
+    </string>             
+
+</resources>

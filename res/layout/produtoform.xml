@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="5px"
+    android:orientation="vertical">
+
+    <TableLayout 
+        android:id="@+id/tablelayout1" 
+        android:layout_height="fill_parent" 
+        android:layout_width="fill_parent"
+        android:paddingTop="5px">
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text1" 
+                android:text="@string/labeldescricao"/>
+            <EditText 
+                android:id="@+id/etDescricao" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ReadOnlyEditText"/>
+        </TableRow>        
+        
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text3" 
+                android:text="@string/labelgrupo"/>
+            <EditText 
+                android:id="@+id/etGrupo" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"                
+                style="@style/ReadOnlyEditText"/>
+        </TableRow>                
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text2" 
+                android:text="@string/labelcodigo"/>
+            <EditText 
+                android:id="@+id/etCodigoImport" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ReadOnlyEditText"/>
+        </TableRow>            
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text15" 
+                android:text="@string/labelcodbarras"/>
+            <EditText 
+                android:id="@+id/etCodBarras" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ReadOnlyEditText"/>
+        </TableRow>                    
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text4" 
+                android:text="@string/labelprecovenda"/>
+            <EditText 
+                android:id="@+id/etPrecoVenda" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ReadOnlyNumericEditText"/>
+        </TableRow>         
+
+       <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text5" 
+                android:text="@string/labelestoque"/>
+            <EditText 
+                android:id="@+id/etEstoque" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                style="@style/ReadOnlyNumericEditText"/>
+            <TextView 
+                android:id="@+id/text28" 
+                android:text="@string/labelun"/>
+            <EditText 
+                android:id="@+id/etUn" 
+                android:layout_width="fill_parent"
+                style="@style/ReadOnlyEditText"/>                
+        </TableRow>         
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text6" 
+                android:text="@string/labelurl"/>
+            <EditText 
+                android:id="@+id/etUrl" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ReadOnlyEditText"
+                android:maxLines="1"/>
+            <ImageButton
+                android:id="@+id/btUrl"
+                style="@style/btWeb"/>
+        </TableRow>       
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text7" 
+                android:text="@string/labelobs"/>
+            <EditText 
+                android:id="@+id/etObs" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ReadOnlyEditText"/>
+        </TableRow>         
+
+    </TableLayout>
+    
+</ScrollView>    

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="5px"
+    android:orientation="vertical">
+
+    <TableLayout 
+        android:id="@+id/tablelayout1" 
+        android:layout_height="fill_parent" 
+        android:layout_width="fill_parent"
+        android:paddingTop="5px">
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text1" 
+                android:text="@string/labelnome"/>
+            <EditText 
+                android:id="@+id/etNome" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="100"/>
+        </TableRow>        
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text2" 
+                android:text="@string/labelfantasia"/>
+            <EditText 
+                android:id="@+id/etFantasia" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="100"/>
+        </TableRow>            
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text15" 
+                android:text="@string/labeltelefone"/>
+            <EditText 
+                android:id="@+id/etTelefone" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="20"
+                android:inputType="number"/>
+        </TableRow>        
+
+        <TableRow android:layout_width="fill_parent">
+
+            <TextView 
+                android:id="@+id/text28" 
+                android:text="@string/labelpessoa"
+                android:layout_gravity="center_vertical"/>
+
+            <RadioGroup
+                android:id="@+id/rgPessoas"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="horizontal">
+            
+                <RadioButton
+                    android:id="@+id/rbPessoaFisica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pessoafisica" />
+
+                <RadioButton
+                    android:id="@+id/rbPessoaJuridica"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/pessoajuridica" />
+                    
+            </RadioGroup>
+
+        </TableRow>          
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/tvDocumento1" 
+                android:text="@string/labelcnpj"/>
+            <EditText 
+                android:id="@+id/etDocumento1" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="20"
+                android:inputType="number"/>
+        </TableRow>     
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/tvDocumento2" 
+                android:text="@string/labelie"/>
+            <EditText 
+                android:id="@+id/etDocumento2" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="20"
+                android:inputType="number"/>
+        </TableRow>         
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text4" 
+                android:text="@string/labelcep"/>
+            <EditText 
+                android:id="@+id/etCep" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="9"
+                android:inputType="number"/>
+        </TableRow>         
+
+       <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text5" 
+                android:text="@string/labelendereco"/>
+            <EditText 
+                android:id="@+id/etEndereco" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="100"/>
+        </TableRow>         
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text6" 
+                android:text="@string/labelnum"/>
+            <EditText 
+                android:id="@+id/etNum" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="20"/>
+        </TableRow>       
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text7" 
+                android:text="@string/labelbairro"/>
+            <EditText 
+                android:id="@+id/etBairro" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="50"/>
+        </TableRow>         
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text8" 
+                android:text="@string/labelcomplend"/>
+            <EditText 
+                android:id="@+id/etComplEnd" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="50"/>
+        </TableRow>             
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text9" 
+                android:text="@string/labelcidade"/>
+            <EditText 
+                android:id="@+id/etCidade" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="50"/>
+        </TableRow>             
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text10" 
+                android:text="@string/labeluf"/>             
+            <Spinner 
+                android:id="@+id/spUf"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>           
+        </TableRow>                           
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text11" 
+                android:text="@string/labelregiao"/>
+            <EditText 
+                android:id="@+id/etRegiao" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="100"
+                style="@style/ReadOnlyEditText"/>
+            <ImageButton
+                android:id="@+id/btProcRegiao"
+                style="@style/btBusca"/>                 
+        </TableRow>             
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text12" 
+                android:text="@string/labelemail"/>
+            <EditText 
+                android:id="@+id/etEmail" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="100"
+                android:inputType="textEmailAddress"/>
+        </TableRow>             
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text13" 
+                android:text="@string/labelresponsavel"/>
+            <EditText 
+                android:id="@+id/etResponsavel" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="100"/>
+        </TableRow>     
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text14" 
+                android:text="@string/labelobs"/>
+            <EditText 
+                android:id="@+id/etObs" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:minLines="3"/>
+        </TableRow>             
+
+    </TableLayout>
+    
+</ScrollView>    

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:paddingTop="5px" >
+
+    <LinearLayout
+        android:id="@+id/widget43"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/btProcessar"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10px"
+            android:text="@string/processar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sincronizar" />
+
+        <CheckBox
+            android:id="@+id/cbProdutos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/produtos" />
+
+        <CheckBox
+            android:id="@+id/cbClientes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/clientes" />
+
+        <CheckBox
+            android:id="@+id/cbCondPagto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/condpagtos" />
+
+        <CheckBox
+            android:id="@+id/cbPedidos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/orcamentos" />
+    </LinearLayout>
+
+</ScrollView>

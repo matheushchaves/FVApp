@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     >
+
+    <PreferenceCategory
+        android:title="@string/dadosempresa"
+        tools:ignore="HardcodedText" >
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="Nome da Empresa"
+            android:inputType="textCapCharacters"
+            android:key="srasoemp"
+            android:summary="Razão Social da Empresa"
+            android:title="Nome da Empresa" />
+
+        <EditTextPreference
+            android:defaultValue=""
+            android:dialogTitle="Endereço de Ftp"
+            android:inputType="textCapCharacters"            
+            android:key="ftpDaEmpresa"
+            android:summary="Endereço do Ftp dos Dados da Empresa"
+            android:title="Ftp dos Dados" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/vendedor" >
+
+        <EditTextPreference
+            android:layout_height="match_parent"
+            android:defaultValue="V0001"
+            android:dialogTitle="@string/prefCodVendSummary"
+            android:inputType="textCapCharacters"
+            android:key="prefCodVend"
+            android:summary="@string/prefCodVendSummary"
+            android:title="@string/prefCodVendTitulo" />
+
+        <EditTextPreference
+            android:defaultValue="123"
+            android:dialogTitle="@string/prefSenhaVendSummary"
+            android:inputType="textPassword"
+            android:key="prefSenhaVend"
+            android:summary="@string/prefSenhaVendSummary"
+            android:title="@string/prefSenhaVendTitulo" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/sincronizacao" >
+
+        <EditTextPreference
+            android:dialogTitle="@string/prefEmailExportSummary"
+            android:inputType="textEmailAddress"
+            android:key="prefEmailExport"
+            android:summary="@string/prefEmailExportSummary"
+            android:title="@string/prefEmailExportTitulo" />
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">StarDroid</string>
+    
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="ok">Ok</string>    
+    
+    <string name="processar">Processar</string>    
+    <string name="cancelar">Cancelar</string>    
+    <string name="enviar">Enviar</string>   
+    
+    <string name="mensagem">Mensagem</string>   
+    
+    <string name="sucesso">Processo realizado com sucesso</string>
+    <string name="sucessoarq">gerado com sucesso</string>
+    <string name="sucessocomerro">Processo realizado com erro</string>
+
+    <string name="errogerararq">Erro ao gerar arquivo</string>    
+    <string name="errorecuperararq">Erro ao recuperar arquivo</string>    
+    <string name="errocopiararq">Erro ao copiar arquivo</string>    
+    <string name="errofiltroexibir">Erro ao exibir tela de filtro</string>    
+    <string name="erroformexibir">Erro ao exibir formulário</string>
+    <string name="erroformsalvar">Erro ao salvar formulário</string>
+    <string name="errolistaexibir">Erro ao exibir lista</string>
+    <string name="errolistaexcluir">Erro ao excluir registro</string>
+    <string name="errolistaselecionar">Erro ao selecionar registro</string>
+    <string name="errobdiniciar">Erro ao iniciar o banco de dados</string>
+    <string name="errofala">Erro ao executar serviço de fala</string>
+    <string name="errocodbarras">Erro ao executar serviço de código de barras</string>
+    <string name="erroenviaremail">Erro ao enviar email</string>
+    <string name="erroligar">Erro ao fazer ligação</string>
+    <string name="errosms">Erro ao enviar sms</string>
+    <string name="erromapa">Erro ao abrir mapa</string>
+    
+    <string name="consisteorcamentoitem">Informe um produto</string>
+    
+    <string name="aparelhosemsuporte">Ação não suportada pelo aparelho</string>    
+    
+    <string name="titmsgpergunta">Pergunta</string>
+    <string name="titmsgerro">Erro</string>
+    <string name="titmsginformacao">Informação</string>
+    <string name="titmsgalerta">Atenção</string>
+    <string name="titmsgopcoes">Opções</string>
+    <string name="titmsgsincronizando">Sincronizando</string>
+    
+    <string name="msgaguardar">Por favor, aguarde...</string>
+    
+    <string name="endereconaoencontrado">Endereco não encontrado</string>
+    
+    <string name="perguntadeletar">Deseja realmente deletar o registro?</string>
+    <string name="perguntaconcluir">Deseja realmente concluir o orçamento?</string>
+        
+    <string name="listavazia">Sem registros</string>
+    <string name="nadaselecionado">Nenhum registro selecionado</string>
+    
+    <string name="menuincluir">Incluir</string>
+    <string name="menueditar">Editar</string>
+    <string name="menudeletar">Deletar</string>
+    <string name="menuver">Ver</string>
+    <string name="menuselecionar">Selecionar</string>
+    <string name="menufiltrar">Filtrar</string>
+    <string name="menuordenar">Ordenar</string>
+    <string name="menusalvar">Salvar</string>
+    <string name="menucancelar">Cancelar</string>       
+    <string name="menulimpar">Limpar</string>    
+    <string name="menutodos">Todos</string>    
+    <string name="menunenhum">Nenhum</string>    
+    <string name="menuok">Ok</string>    
+    <string name="menuoutros">Outros</string>    
+    <string name="menumapa">Ver no mapa</string>    
+    
+    <string name="menuenviaremail">Enviar email</string>    
+    <string name="menuligar">Telefonar</string>    
+    <string name="menuenviarsms">Enviar sms</string>    
+    
+    <string name="execsql">Executar SQL</string>    
+    
+    <string name="condpagtoavista">à vista</string> 
+    
+    <string name="storcaberto">Aberto</string>    
+    <string name="storcconcluido">Concluído</string> 
+    <string name="storcambos">Ambos</string> 
+    
+    <string name="concluir">Concluir</string>
+    <string name="itens">Itens</string>
+    
+    <string name="pedidoconcluido">Não é possível excluir pedido concluído</string> 
+    
+    <string name="novo">Novo</string>    
+    
+    <string name="pessoafisica">Física</string>
+    <string name="pessoajuridica">Jurídica</string>
+    
+    <string name="moeda">R$</string>
+    <string name="valorvazio">0,00</string>
+    
+    <string name="sincronizar">Sincronizar</string>
+    
+    <string name="emailassuntoexport">Exportação</string>
+    <string name="emailmensagemexport">Olá, anexo arquivos para sincronização.</string>    
+    
+    <string name="cliente">Cliente</string>
+    <string name="clientes">Clientes</string>
+    <string name="clienteform">Cadastro de clientes</string>    
+    <string name="clientefiltro">Filtrar clientes</string>        
+    
+    <string name="condpagto">Cond. Pagto.</string>
+    <string name="condpagtos">Cond. Pagtos.</string>
+    <string name="condpagtofiltro">Filtrar Cond. Pagtos.</string>        
+    
+    <string name="gasto">Despesa</string>
+    <string name="gastos">Despesas</string>    
+    <string name="gastoform">Anotação de despesa</string>    
+    <string name="gastofiltro">Filtrar despesas</string>        
+    
+    <string name="grupo">Grupo</string>
+    <string name="grupos">Grupos</string>    
+    <string name="grupofiltro">Filtrar grupos</string>        
+    
+    <string name="orcamento">Pedido</string>
+    <string name="orcamentos">Pedidos</string>    
+    <string name="orcamentoform">Pedido</string>    
+    <string name="orcamentofiltro">Filtrar pedidos</string>        
+    
+    <string name="orcamentoitem">Item do orçamento</string>
+    <string name="orcamentositens">Itens do orçamento</string>    
+    <string name="orcamentoitemform">Item do orçamento</string>
+    
+    <string name="produto">Produto</string>
+    <string name="produtos">Produtos</string>    
+    <string name="produtoform">Cadastro de produtos</string>    
+    <string name="produtofiltro">Filtrar produtos</string>    
+    
+    <string name="regiao">Região</string>
+    <string name="regioes">Regiões</string>    
+    <string name="regiaoform">Cadastro de região</string>    
+    <string name="regiaofiltro">Filtrar regiões</string>        
+    
+    <string name="uteis">Úteis</string> 
+    <string name="configuracoes">Configurações</string> 
+    <string name="sincronizacao">Sincronização</string>
+    <string name="vendedor">Vendedor</string>    
+    
+    <string name="labelnome">Nome:</string>    
+    <string name="labelfantasia">Fantasia:</string>
+    <string name="labeltelefone">Telefone:</string>
+    <string name="labelpessoa">Pessoa:</string>
+    <string name="labelcnpj">Cnpj:</string>
+    <string name="labelcpf">Cpf:</string>
+    <string name="labelie">Ie:</string>
+    <string name="labelrg">Rg:</string>
+    <string name="labelcep">Cep:</string>
+    <string name="labelendereco">End.:</string>
+    <string name="labelnum">Num.:</string>
+    <string name="labelbairro">Bairro:</string>
+    <string name="labelcomplend">Compl.:</string>
+    <string name="labelcidade">Cidade:</string>
+    <string name="labeluf">Uf:</string>
+    <string name="labelregiao">Região:</string>
+    <string name="labelemail">Email:</string>    
+    <string name="labelresponsavel">Resp.:</string>
+    <string name="labelobs">Obs.:</string>   
+    <string name="labelcodigo">Código:</string>
+    <string name="labeldescricao">Descrição:</string>   	 
+    <string name="labelestoque">Qtd.Est.:</string>   	 
+    <string name="labelprecovenda">Preço:</string>   	     
+    <string name="labelgrupo">Grupo:</string>   	 
+    <string name="labelun">Un.:</string>   	 
+    <string name="labelcodbarras">Barras:</string>   	 
+    <string name="labelurl">Url:</string>   	     
+    <string name="labelcondpagtodesconto">desc.:</string>   	     
+    <string name="labelcondpagtoparcelas">parcela(s)</string>   	     
+    <string name="labelqtde">Qtde.:</string>   	     
+    <string name="labelvalor">Valor:</string>   	     
+    <string name="labelvalortotal">Total:</string>   	     
+    <string name="labeldata">Data:</string>   	     
+    <string name="labelstatus">Status:</string>   	     
+    <string name="labelcliente">Cliente:</string>   	     
+    <string name="labelcondpagto">Pagto:</string>   	     
+    <string name="labelnumero">Numero:</string>   	     
+    <string name="labelpedido">Ped.:</string>
+    <string name="labelproduto">Produto:</string>
+    <string name="labelporcdesc">Desc:</string>
+    <string name="labelvalorbruto">Bruto:</string>
+    
+    <string name="consistecliente">Informe um cliente.</string>
+    <string name="consistecondpagto">Informe uma cond. pagto.</string>
+    <string name="consisteitens">Nenhum item definido.</string>
+    
+    <string name="prefCodVendTitulo">Código</string>
+    <string name="prefCodVendSummary">Código do vendedor</string>
+    <string name="prefSenhaVendTitulo">Senha</string>
+    <string name="prefSenhaVendSummary">Senha do vendedor</string>    
+    <string name="prefEmailExportTitulo">Email</string>
+    <string name="prefEmailExportSummary">Email destinatário de exportação</string>
+    <string name="descriapp" tools:ignore="Typos">Força de Vendas Inteligence Informatica</string>        
+    
+    <string name="dadosempresa">Dados da Empresa</string>        
+    
+    <string name="_dados_do_ftp">" Dados do Ftp"</string>        
+    
+    <string name="endere_o_ftp_site_com_br_pasta_caminho_">Endereço(ftp.site.com.br/Pasta/caminho/)</string>        
+    
+    <string name="senha">Senha</string>        
+    
+    <string name="empresa">Empresa</string>        
+    
+    <string name="configura_es_transmiss_o">Configurações - Transmissão</string>        
+    
+    <string name="confirmar">Confirmar</string>        
+    
+    <string name="retornar">Retornar</string>        
+    
+    <string name="url_de_recebimento">Codigo do Vendedor</string>        
+    
+    <string name="usu_rio">Usuário</string>        
+    
+</resources>

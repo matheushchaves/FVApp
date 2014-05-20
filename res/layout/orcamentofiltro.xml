@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingTop="5px"
+    android:orientation="vertical">
+
+    <TableLayout 
+        android:id="@+id/tablelayout1" 
+        android:layout_height="fill_parent" 
+        android:layout_width="fill_parent"
+        android:paddingTop="5px">
+            
+        <TableRow android:layout_width="fill_parent">
+
+            <TextView 
+                android:id="@+id/text28" 
+                android:text="@string/labelstatus"
+                android:layout_gravity="center_vertical"/>
+
+            <RadioGroup
+                android:id="@+id/rgStatus"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" 
+                android:orientation="vertical">
+            
+                <RadioButton
+                    android:id="@+id/rbAberto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/storcaberto" />
+            
+                <RadioButton
+                    android:id="@+id/rbConcluido"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/storcconcluido" />                    
+
+                <RadioButton
+                    android:id="@+id/rbAmbos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/storcambos" 
+                    android:checked="true"/>
+                    
+            </RadioGroup>
+
+        </TableRow>          
+
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text2" 
+                android:text="@string/labelcliente"/>
+            <EditText 
+                android:id="@+id/etCliente" 
+                android:layout_width="fill_parent"
+                android:layout_weight="1"
+                android:maxLength="100"
+                style="@style/ReadOnlyEditText"/>
+            <ImageButton
+                android:id="@+id/btProcCliente"
+                style="@style/btBusca"/>                 
+        </TableRow>      
+        
+        <TableRow android:layout_width="fill_parent">
+            <TextView 
+                android:id="@+id/text3" 
+                android:text="@string/labeldata"/>
+            <EditText 
+                android:id="@+id/etData" 
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/ReadOnlyEditText"/>
+            <ImageButton
+                android:id="@+id/btData"
+                style="@style/btData"/>                 
+        </TableRow>                                                      
+
+    </TableLayout>
+    
+</ScrollView>    

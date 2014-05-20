@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <color name="fundo">#000000</color>
+    <color name="linhaselecionada">#005577</color>
+    <color name="textooculto">#808080</color>
+    <color name="branco">#FFFFFF</color>
+    <color name="barratotal">#000000</color>
+    
+</resources>
